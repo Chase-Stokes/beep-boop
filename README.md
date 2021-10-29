@@ -44,11 +44,11 @@ Copyright (c) _2021_  _Chase Stokes_
 
 Test: It should return true if the input contains 1, 2, or 3
 Code: containsOneToThree(1)
-Expected Output: True
+Expected Output: True ~completed
 
 Test: It should return false if the input doesnt contains 1, 2, or 3
 Code: containsOneToThree(4)
-Expected Output: False
+Expected Output: False ~completed
 
 
 ## Describe: beepBoop()
