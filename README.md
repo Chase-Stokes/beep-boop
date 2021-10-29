@@ -2,7 +2,7 @@
 
 #### By _**Chase Stokes**_
 
-#### _Takes in a sentence and returns it in pig latin_
+#### _Replaces Numbers 1 2 and 3 with text_
 
 ## Technologies Used
 

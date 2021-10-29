@@ -65,31 +65,18 @@ function containsThree(input) {
 function beepBoop(input) {
   let inputArray = input.split("");
   let beepBoopArray = [];
-  for (let i =1; i <= inputArray.length; i++) {
+  for (let i =0; i <= inputArray.length; i++) {
     if (containsThree(input)) {
       beepBoopArray.push("Won't you be my neighbor?");
     }else if (containsTwo(input)) {
       beepBoopArray.push("boop");
     }else if (containsOne(input)) {
-      beepBoopArray.push(input + "beep");
+      beepBoopArray.push("beep");
     }else {
-      break;
+      beepBoopArray.push(input);
     }
   }; 
   return beepBoopArray.join(" ");
 }
   
 
-//inputArray.forEach(function(element)
-
-/*if (!containsOneToThree(input)) {
-  beepBoopArray.push(input);
-}else if (containsOneToThree(input)) {
-  beepBoopArray.push("Wont you be my Neighbor");
-}else if (containsOneToThree(input)) {
-  beepBoopArray.push("boop");
-}else if (containsOneToThree(input)) {
-  beepBoopArray.push("beep");
-}else {
-  beepBoopArray.push(input);
-}*/
