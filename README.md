@@ -50,6 +50,10 @@ Test: It should return false if the input doesnt contains 1, 2, or 3
 Code: containsOneToThree(4)
 Expected Output: False ~completed
 
+Test: It should return true if the input includes one two or three regardless up to 2 digit numbers
+Code: containsOneToThree(43)
+Expected Output: True
+
 
 ## Describe: beepBoop()
 

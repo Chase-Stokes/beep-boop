@@ -1,8 +1,16 @@
 function containsOneToThree(input) {
   const oneToThree = ["1", "2", "3"]
   let inputArray = input.split("");
-  for (let i=0; i < inputArray.length; i++) {
-    if (inputArray[i] === oneToThree[i]) {
+  for (let i=0; i < oneToThree.length; i++) {
+    if (input === oneToThree[i]) {
+      return true;
+    }else if (input[0] === oneToThree[i]) {
+      return true;
+    }else if (input[1] === oneToThree[i]) {
+      return true;
+    }else if (input[2] === oneToThree[i]) {
+      return true;
+    }else if (input[3] === oneToThree[i]) {
       return true;
     }
   };
