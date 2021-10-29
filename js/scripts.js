@@ -20,19 +20,21 @@ function containsOneToThree(input) {
 function beepBoop(input) {
   let inputArray = input.split("");
   let beepBoopArray = [];
-  for (let i=0; i < inputArray.length; i++){
-    if (inputArray[i] === containsOneToThree[2]) {
+  inputArray.forEach(function(input){
+    if (inputArray === containsOneToThree) {
       beepBoopArray.push("Wont you be my Neighbor");
-    }else if (inputArray[i] === containsOneToThree[1]) {
+    }else if (inputArray === containsOneToThree) {
       beepBoopArray.push("boop");
-    }else if (inputArray[i] === containsOneToThree[0]) {
+    }else if (inputArray === containsOneToThree) {
       beepBoopArray.push("beep");
     }else {
-      beepBoopArray.push(i)
+      beepBoopArray.push(input)
     }
-  } 
+  }); 
   return beepBoopArray;
 }
+    
+
 
   /*}else if (inputArray[1] === oneToThree[i]) {
       return true;
