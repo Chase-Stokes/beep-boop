@@ -40,11 +40,22 @@ Copyright (c) _2021_  _Chase Stokes_
 
 ### Tests
 
+## Describe: containsOneToThree()
+
+Test: It should return true if the input contains 1, 2, or 3
+Code: containsOneToThree(1)
+Expected Output: True
+
+Test: It should return false if the input doesnt contains 1, 2, or 3
+Code: containsOneToThree(4)
+Expected Output: False
+
+
 ## Describe: beepBoop()
 
 Test: It should return an array with a 0 if the number 0 is inputted
 Code: beepBoop(0);
-Expected Output: 0
+Expected Output: 0 ~completed
 
 Test: It should ruturn an array with beep if the number 1 is inputted
 Code: beepBoop(1)
