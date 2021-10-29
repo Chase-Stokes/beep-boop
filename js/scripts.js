@@ -18,13 +18,10 @@ function containsOneToThree(input) {
 };
 
 function beepBoop(input) {
+  let inputArray = input.split("");
   let beepBoopArray = [];
   for (let i =1; i <= inputArray.length; i++) {
     if (containsOneToThree(input)) {
-      beepBoopArray.push("Wont you be my Neighbor");
-    }else if (containsOneToThree(input)) {
-      beepBoopArray.push("boop");
-    }else if (containsOneToThree(input)) {
       beepBoopArray.push("beep");
     }else {
       beepBoopArray.push(input);
@@ -35,3 +32,15 @@ function beepBoop(input) {
   
 
 //inputArray.forEach(function(element)
+
+/*if (!containsOneToThree(input)) {
+  beepBoopArray.push(input);
+}else if (containsOneToThree(input)) {
+  beepBoopArray.push("Wont you be my Neighbor");
+}else if (containsOneToThree(input)) {
+  beepBoopArray.push("boop");
+}else if (containsOneToThree(input)) {
+  beepBoopArray.push("beep");
+}else {
+  beepBoopArray.push(input);
+}*/

@@ -63,7 +63,7 @@ Expected Output: 0 ~completed
 
 Test: It should ruturn an array with beep if the number 1 is inputted
 Code: beepBoop(1)
-Expected Output: "beep"
+Expected Output: "beep" ~completed
 
 Test: It should ruturn an array with boop if the number 2 is inputted
 Code: beepBoop(1)
