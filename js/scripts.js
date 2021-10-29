@@ -15,27 +15,23 @@ function containsOneToThree(input) {
     }
   };
   return false;
-}
+};
 
 function beepBoop(input) {
-  let inputArray = input.split("");
   let beepBoopArray = [];
-  inputArray.forEach(function(input){
-    if (inputArray === containsOneToThree) {
+  for (let i =1; i <= inputArray.length; i++) {
+    if (containsOneToThree(input)) {
       beepBoopArray.push("Wont you be my Neighbor");
-    }else if (inputArray === containsOneToThree) {
+    }else if (containsOneToThree(input)) {
       beepBoopArray.push("boop");
-    }else if (inputArray === containsOneToThree) {
+    }else if (containsOneToThree(input)) {
       beepBoopArray.push("beep");
     }else {
-      beepBoopArray.push(input)
+      beepBoopArray.push(input);
     }
-  }); 
+  }; 
   return beepBoopArray;
 }
-    
+  
 
-
-  /*}else if (inputArray[1] === oneToThree[i]) {
-      return true;
-    }*/
+//inputArray.forEach(function(element)
