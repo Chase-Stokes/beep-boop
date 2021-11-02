@@ -66,9 +66,11 @@ Code: beepBoop(1)
 Expected Output: "beep" ~completed
 
 Test: It should ruturn an array with boop if the number 2 is inputted
-Code: beepBoop(1)
-Expected Output: "boop"
+Code: beepBoop(2)
+Expected Output: "boop" ~completed
 
 Test: It should ruturn an array with "wont you be my neighbor" if the number 1 is inputted
-Code: beepBoop(1)
-Expected Output: "wont you be my neighbor"
+Code: beepBoop(3)
+Expected Output: "wont you be my neighbor" ~completed
+
+

@@ -1,4 +1,4 @@
-function containsOne(input) {
+/*function containsOne(input) {
   const one = ["1"]
   let inputArray = input.split("");
   for (let i=0; i < one.length; i++) {
@@ -45,7 +45,7 @@ function containsThree(input) {
   let inputArray = input.split("");
   for (let i=0; i < three.length; i++) {
     if (input ===three[i]) {
-      return true;
+      return true ; 
     }else if (input[0] === three[i]) {
       return true;
     }else if (input[1] === three[i]) {
@@ -59,24 +59,24 @@ function containsThree(input) {
     }
   };
   return false;
-};
+};*/
 
 
 function beepBoop(input) {
-  let inputArray = input.split("");
+  let inputNum = input.toString();
   let beepBoopArray = [];
-  for (let i =0; i <= inputArray.length; i++) {
-    if (containsThree(input)) {
+  for (let i =0; i <= input; i++) {
+    if (inputNum.includes(3)) {
       beepBoopArray.push("Won't you be my neighbor?");
-    }else if (containsTwo(input)) {
+    }else if (inputNum.includes(2)) {
       beepBoopArray.push("boop");
-    }else if (containsOne(input)) {
+    }else if (inputNum.includes(1)) {
       beepBoopArray.push("beep");
     }else {
-      beepBoopArray.push(input);
+      beepBoopArray.push(i);
     }
   }; 
-  return beepBoopArray.join(" ");
+  return beepBoopArray.join("  ");
 }
   
 
