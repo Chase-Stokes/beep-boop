@@ -63,20 +63,28 @@ function containsThree(input) {
 
 
 function beepBoop(input) {
-  let inputNum = input.toString();
   let beepBoopArray = [];
   for (let i =0; i <= input; i++) {
-    if (inputNum.includes(3)) {
+    let inputNum = i.toString();
+    if (inputNum.includes("3")) {
       beepBoopArray.push("Won't you be my neighbor?");
-    }else if (inputNum.includes(2)) {
+    }else if (inputNum.includes("2")) {
       beepBoopArray.push("boop");
-    }else if (inputNum.includes(1)) {
+    }else if (inputNum.includes("1")) {
       beepBoopArray.push("beep");
     }else {
-      beepBoopArray.push(i);
+      beepBoopArray.push("" + inputNum);
     }
   }; 
-  return beepBoopArray.join("  ");
+  return beepBoopArray;
 }
   
+$(document).ready(function(){
+  $("form#inputNumber").submit(function(event){
+    event.preventDefault();
+    let numberInput = $("input#inputtedNumber").val();
+    let output = beepBoop(numberInput);
+    $(".outputArray").html(output);
+  });
+});
 
